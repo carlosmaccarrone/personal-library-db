@@ -11,6 +11,8 @@ services:
       - "5432:5432"
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
+    networks:
+      - library_net
 
   pgadmin:
     image: dpage/pgadmin4
@@ -21,3 +23,9 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin123
     ports:
       - "8080:80"
+    networks:
+      - library_net
+
+networks:
+  library_net:
+    driver: bridge
