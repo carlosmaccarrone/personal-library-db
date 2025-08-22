@@ -28,4 +28,4 @@ services:
 
 networks:
   library_net:
-    driver: bridge
+    external: true
