@@ -229,3 +229,4 @@ INSERT INTO Genres (genre_name) VALUES ('Tourism');
 INSERT INTO Genres (genre_name) VALUES ('Fiction');
 INSERT INTO Genres (genre_name) VALUES ('Dictionary');
 INSERT INTO Genres (genre_name) VALUES ('Python');
+INSERT INTO Genres (genre_name) VALUES ('C++');
