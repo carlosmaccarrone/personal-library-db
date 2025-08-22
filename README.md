@@ -24,9 +24,9 @@ docker network create --driver bridge --attachable library_net
 docker-compose up -d
 ```
 This will start:
-	- PostgreSQL with the database personal_library
-	- pgAdmin for database management at http://localhost:8080 (user: admin@example.com, password: admin123)
-	- And creates a external network to connect with a backend
+	- PostgreSQL with the database personal_library.
+	- pgAdmin for database management at http://localhost:8080 (user: admin@example.com, password: admin123).
+	- And creates a external network to connect with a backend.
 
 3. The scripts in sql/ are executed in numeric order, loading first the data model, then inserts, views, indexes, functions, triggers, and constraints.
 
